@@ -24,6 +24,6 @@ jobs:
       - name: Build and Deploy to Netlify
         run: |
           # Replace 'your-netlify-site-name' with your actual Netlify site name
-          netlify sites deploy --prod --site hello-world-repo
+          netlify sites deploy --site hello-world-repo
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
